@@ -14,7 +14,7 @@ JSON=$(cat << 'EOF'
         "required_status_checks": null,
         "enforce_admins": true,
         "required_pull_request_reviews": {
-            "required_approving_review_count": 0,
+            "required_approving_review_count": 2,
 	    "require_code_owner_reviews": true
         },
         "restrictions": null
