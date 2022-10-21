@@ -2,7 +2,7 @@
 set -e
 
 export org="Rochith"
-export user="Rochith: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"
+export user="Rochith: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"
 export branch="main" 
 
 declare -a repositories=(
