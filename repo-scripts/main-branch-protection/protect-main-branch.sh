@@ -2,8 +2,8 @@
 set -e
 
 export org="Rochith"
-export user="Rochith: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"
-export branch="main" 
+export user="Rochith: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"
+export branch="main"
 
 declare -a repositories=(
     "D5"
@@ -14,8 +14,8 @@ JSON=$(cat << 'EOF'
         "required_status_checks": null,
         "enforce_admins": true,
         "required_pull_request_reviews": {
-            "required_approving_review_count": 2,
-	    "require_code_owner_reviews": true
+            "require_code_owner_reviews": true,
+            "required_approving_review_count": 2            
         },
         "restrictions": null
     }
@@ -26,7 +26,7 @@ for repository_name in "${repositories[@]}"; do
     echo "========"
     echo "=======> $repository_name"
     echo "========"
-        
+
     curl \
         --silent \
         --user $user \
